@@ -4,4 +4,4 @@ build:
   config:
     DARKSKY_HOST: https://api.darksky.net
 run:
-  bff: cd /home && /bin/sh entrypoint.sh
+  bff: /bin/sh /home/entrypoint.sh
