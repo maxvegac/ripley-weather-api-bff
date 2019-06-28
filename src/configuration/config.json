@@ -1,6 +1,6 @@
 {
   "DARKSKY_API_KEY": "afd2e61497bb372dd4806fabb4b38334",
-  "DARKSKY_HOST": "http://localhost:8880",
+  "DARKSKY_HOST": "https://api.darksky.net",
   "DARKSKY_PATH": "/forecast",
   "REDIS_HOST": "localhost",
   "REDIS_PORT": 6379,
