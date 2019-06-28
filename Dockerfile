@@ -10,5 +10,4 @@ COPY entrypoint.sh entrypoint.sh
 
 RUN yarn install --production --silent
 
-ENTRYPOINT /home/entrypoint.sh
-
+ENTRYPOINT yarn serve
