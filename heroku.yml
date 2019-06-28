@@ -1,7 +1,7 @@
 build:
   docker:
-    bff: Dockerfile
+    web: Dockerfile
   config:
     DARKSKY_HOST: https://api.darksky.net
 run:
-  bff: /bin/sh /home/entrypoint.sh
+  web: /bin/sh /home/entrypoint.sh
