@@ -11,11 +11,16 @@ exports.getWeatherByPosition = async (latitude, longitude) => {
       return cachedWeatherResponse
     }
     let weatherResponse = null
+    tries = 1
     while (!weatherResponse) {
       try {
         weatherResponse = await darkSkyClient.getWeatherByPosition(latitude, longitude)
       } catch (e) {
         console.log('Error getting DarkSky from DarkSky, retrying...')
+      }
+      tries += 1
+      if (tries === 5) {
+        throw new Error('DarkSky API retries exhausted (5 times)')
       }
     }
     await redisClient.setWeatherByPosition(latitude, longitude, weatherResponse)

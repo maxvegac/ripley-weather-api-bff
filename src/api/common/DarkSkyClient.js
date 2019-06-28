@@ -9,7 +9,11 @@ class DarkSkyClient {
   }
 
   getWeatherByPosition(latitude, longitude) {
+    const errorProbability = Math.floor(Math.random() * (100))
     return new Promise((resolve, reject) => {
+      if (errorProbability <= 10) {
+          reject('Error simulation')
+      }
       this.instance.request({
         method: 'get',
         url: `${latitude},${longitude}?lang=es&units=si`,
