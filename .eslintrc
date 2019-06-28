@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "semi": [1, "never"],
+    "no-useless-escape": ["warn"],
+    "global-require":  ["warn"],
+    "import/no-dynamic-require":  ["warn"],
+    "no-param-reassign": ["warn"],
+    "no-await-in-loop": ["warn"],
+    "object-curly-newline": 0
+  },
+  "env": {
+    "jest": true
+  }
+}
