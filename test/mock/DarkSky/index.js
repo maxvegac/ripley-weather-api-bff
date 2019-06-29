@@ -1,5 +1,6 @@
 const mockServer = require('mockttp').getLocal()
 const weatherResponse = require('./weather.json')
+
 mockServer
   .get(/\/forecast\/[\s\S]*\/[\s\S]/)
   .thenReply(200, JSON.stringify(weatherResponse))
@@ -13,6 +14,6 @@ function stop() {
 }
 
 module.exports = {
-  'start': start,
-  'stop': stop
+  start,
+  stop,
 }
