@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "dev-with-mocks": "nodemon bin/run-app-with-mocks.js"
+    "dev-with-mocks": "nodemon bin/run-app-with-mocks.js",
   },
   "dependencies": {
     "async-redis": "^1.1.7",

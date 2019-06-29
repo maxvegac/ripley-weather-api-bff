@@ -3,7 +3,7 @@ const MockAdapter = require('axios-mock-adapter')
 const axios = require('axios')
 const DarkSkyClient = require('../../../src/api/common/DarkSkyClient')
 
-describe('controller: slot windows', () => {
+describe('client: DarkSky', () => {
   let sandbox
 
   beforeEach(() => {

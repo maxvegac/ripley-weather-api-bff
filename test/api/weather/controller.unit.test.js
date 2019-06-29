@@ -5,7 +5,7 @@ const RedisClient = require('../../../src/api/common/RedisClient')
 const weatherAPIResponse = require('./weatherAPI.json')
 const weatherRedisResponse = require('./weatherRedis.json')
 
-describe('controller: slot windows', () => {
+describe('controller: weather', () => {
   let sandbox
 
   beforeEach(() => {
