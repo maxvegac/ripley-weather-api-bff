@@ -11,7 +11,7 @@ exports.getWeatherByPosition = async (latitude, longitude) => {
       return cachedWeatherResponse
     }
     let weatherResponse = null
-    tries = 1
+    let tries = 1
     while (!weatherResponse) {
       try {
         weatherResponse = await darkSkyClient.getWeatherByPosition(latitude, longitude)

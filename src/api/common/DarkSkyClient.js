@@ -12,7 +12,7 @@ class DarkSkyClient {
     const errorProbability = Math.floor(Math.random() * (100))
     return new Promise((resolve, reject) => {
       if (errorProbability <= 10) {
-          reject('Error simulation')
+        reject(new Error('Error simulation'))
       }
       this.instance.request({
         method: 'get',
